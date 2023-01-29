@@ -1,0 +1,310 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container_form {
+    /*background-color:#EBEBEB; */
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+    height: 100vh;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.container_result {
+
+    background-color: #F0F1F4;
+    grid-column: 2 / 3;
+    grid-row: 1/2;
+    height: 100vh;
+}
+
+/*-------------------------------------header-----------------*/
+.form_header {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.form_title {
+    text-align: center;
+}
+
+/*------------------------menu despegable------------------------*/
+.form_box label {
+    margin-bottom: 0.5rem;
+}
+.form_box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.class_select-operation {
+    width: 80%;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 20px;
+    align-self: center;
+    font-style: italic;
+}
+
+/*----------------------------------formulario--------------*/
+
+.form_group {
+
+}
+.form_title {
+    font-size:  25px;
+    margin-bottom: 1rem;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field-input input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.class_form-label {
+    margin-bottom: 0.1rem;
+    display: block;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+.form_group {
+    width: 80%;
+    margin: auto;
+}
+
+.form__field-input select{
+    width: 100%;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.class_btn-calcular {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #3B82F6;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.class_btn-calcular:hover {
+    background-color: #ccc;
+    color: #000;
+    outline: none;
+}
+
+/*----------------------form IGV--------------------------*/
+
+#id_form-igv {
+    margin-bottom: 1rem;
+}
+
+/*-----------------------form simple-------------------*/
+
+#form__capital {
+    margin-bottom: 1rem;
+}
+
+.class_form-tasa {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.tasa_number {
+    flex: 2;
+    margin-right: 1rem;
+}
+.tasa_tiempo {
+    flex: 1;
+}
+
+.class_form-tiempo {
+    display: flex;
+    margin-bottom: 1rem;
+}
+.tiempo_number {
+    flex: 2;
+    margin-right: 1rem;
+}
+.tiempo_periodo {
+    flex: 1;
+}
+
+.container-btn-interes {
+    display: flex;
+    justify-content: space-between;
+
+}
+.container-btn-interes button {
+    height: 40px;
+    width: 48%;
+    border: none;
+    outline: none;
+    background-color: #3B82F6;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.container-btn-interes button:hover {
+    background-color: #ccc;
+    color: #000;
+    outline: none;
+}
+
+/*-------------------------------------ResultInteres-----------------*/
+
+
+
+/*----------------------------------------formAnualidad--------------------------*/
+
+#form__valores {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#form__anualidad {
+    margin-bottom: 1rem;
+}
+
+#form__VP {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    /*margin-bottom: 0.1rem; !important;*/
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    flex: 1;
+}
+
+#form__VF {
+    flex: 1;
+}
+#form__tasa-AV {
+    margin-bottom: 1rem;
+}
+.container_result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form_group-result {
+    background-color: white;
+    width: 80%;
+    padding: 40px 20px;
+    border-radius: 0.25rem; /* 4px */
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+.group_table {
+    border: 0px solid #1C6EA4;
+    width: 100%;
+    height: 205px;
+    text-align: left;
+    border-collapse: collapse;
+}
+.group_table td, .group_table th {
+    border: 1px solid #AAAAAA;
+    padding: 8px 10px;
+}
+.group_table tbody td {
+    font-size: 13px;
+}
+.group_table tr:nth-child(even) {
+    background: #D0E4F5;
+}
+
+/*--------------------------------Gradiente---------------------------*/
+#form__valores-gradiente {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#form__VPG {
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    /*margin-bottom: 0.1rem; !important;*/
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+    flex: 1;
+}
+
+#form__VFG {
+    flex: 1;
+}
+
+#form_primera-gradiente {
+    display: flex;
+    margin-bottom: 1rem;
+}
+#form__primera-cuota {
+    margin-right: 1rem;
+}
+
+#label_primera-cuota {
+    margin-bottom: 0.1rem;
+    display: block;
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+}
+
+/*--------------------------VAN y TIR---------------------------*/
+#form__inversion {
+    margin-bottom: 1rem;
+}
+
+
+
+/*------------------------------FORM_FLUJO--------------------------------------*/
+
+.form_flujo-grupo {
+
+    display: flex;
+    margin-bottom: 1rem;
+}
+.input_flujo-margen {
+    margin-right: 1rem;
+}
+/*-------------------------------Payback------------------------------------------*/
+#form__flujo1-payback{
+    margin-right: 1rem;
+}
+
+#form__payback {
+    margin-bottom: 1rem;
+}
+
+/*-----------------------Punto Equilbrio-------------------------*/
+
+#form__cf {
+    margin-bottom: 1rem;
+}
+
+#form__pu {
+    margin-bottom: 1rem;
+}
+#form__cu {
+    margin-bottom: 1rem;
+}
